@@ -1,0 +1,7 @@
+step-1 : cretaed the Views -- index.html , resultset will be in the console.log form
+step-2 : In server side, created a route folder- Inside route created studdetails.js file
+step-3: using express, created app.js file
+
+Note : 
+
+     Not able to install the github, so uploaded only files.

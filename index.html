@@ -1,0 +1,29 @@
+<html>
+
+<head>
+</head>
+
+<body>
+</body>
+<script>
+    $.ajax({
+        url: "http://localhost:8080/students",
+        type: "JSON",
+        method: "GET",
+        success: function (data, status) {
+
+            var tr;
+            for (var i = 0; i < data.studdetails.length; i++) {
+                tr = $('<tr/>');
+                tr.append("<td>" + data.studdetails[i].id + "</td>");
+                tr.append("<td>" + data.studdetails[i].name + "</td>");
+                tr.append("<td>" + data.studdetails[i].subject + "</td>");
+
+            }
+            console.log(data);
+        }
+});
+
+</script>
+
+</html>
